@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Webly Norge"
+description = "A polished Norwegian landing page for Webly Norge, showcasing professional websites for small local businesses with services, examples, pricing, process, and a direct demo contact."
+version = "1.0.0"
+id = "artifacts/webly-norge"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25681
+
+[services.development]
+run = "pnpm --filter @workspace/webly-norge run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/webly-norge", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/webly-norge/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25681"
+BASE_PATH = "/"

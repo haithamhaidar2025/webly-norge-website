@@ -1,0 +1,16 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "EiUjPzaCFjVPKZb5_q14v"
+uri = "file://index.html"
+type = "text"
+title = "Webly Norge index.html"
+description = "The saved HTML index file from your provided Webly Norge page."
+logical_id = "e791fdb9-be9d-4a00-954e-8a9a2e969d2a"
+content_hash = "sha256:28bf4a762b4cf6473e36a2c2c9981d665e89f8ef4ded26995424f6eb20877c5c"
+size = 12182
+mtime_ms = 1787241478239
+storage_uri = "gcs://replit-rams-assets-archer/rams/assets/repl:253628ba-97c7-4b1a-bd3d-d64f6a05c846/e791fdb9-be9d-4a00-954e-8a9a2e969d2a/8574a767-f7ae-4134-9bda-cdc3b35b2884"
+storage_version_token = "1787241485113526"
+content_type = "text/html"
